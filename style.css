@@ -1,0 +1,126 @@
+@font-face {
+  font-family: 'Proxima Nova Regular';
+  src: url(./fonts/Proxima\ Nova\ Regular.otf) format('opentype');
+}
+
+@font-face {
+  font-family: 'FuturaPT Heavy';
+  src: url(./fonts/Futura\ PT\ Heavy.ttf) format('truetype');
+}
+
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html, body, h1, h2, p {
+  margin: 0;
+}
+
+body {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-color: #464f54;
+}
+
+.top-header {
+  height: 30%;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+}
+
+.input {
+  padding: 4% 0 4% 3%;
+  margin-top: 4%;
+  width: 73%;
+  background-color: #181818;
+}
+
+.input-label, .story-author, .story-title {
+  text-transform: uppercase;
+}
+
+.input-label {
+  font-family: 'Proxima Nova Regular';
+  font-weight: 500;
+  font-size: 15px;
+  color: #303030;
+}
+
+.input-title {
+  padding: .4% 0;
+  font-family: 'Playfair Display', serif;
+  font-weight: 500;
+  font-size: 48px;
+  text-transform: capitalize;
+  color: #fff;
+  border-bottom: 3px solid #303030;
+}
+
+.caret {
+  padding-left: 5px;
+  border-right: 1px solid #fff;
+  line-height: 0.5;
+}
+
+.controls {
+  width: 68%;
+  padding: 2% 0 2% 4%;
+  background-color: #f6bc2c;
+}
+
+[class*="icon-"] {
+  padding: 0 2%;
+}
+
+.story {
+  margin: auto;
+  margin-top: -14%;
+  padding: 17% 11% 4% 11%;
+  width: 88%;
+  background-color: #fff;
+}
+
+.story::before {
+  content: " ";
+  margin-left: 3px;
+  height: 126%;
+  position: absolute;
+  left: 12%;
+  top: 24.5%;
+  border-left: 2px solid #e8eced;
+}
+
+.story-author {
+  font-family: 'Proxima Nova Regular';
+  font-size: 20px;
+  letter-spacing: 4px;
+  color: #8f8f8f;
+}
+
+.story-title {
+  margin-top: 2%;
+  font-family: 'FuturaPT Heavy';
+  font-size: 78px;
+}
+
+.story-chapter-title {
+  margin-bottom: 2%;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 30px;
+  color: #8f8f8f;
+}
+
+.chapter-paragraph {
+  padding: 1.1% 0;
+  line-height: 1.5;
+  font-weight: 500;
+  font-size: 27px;
+}
+
+.main-idea {
+  font-style: italic;
+}
